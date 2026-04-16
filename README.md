@@ -57,8 +57,8 @@ Fig. 1. Scatter plots and statistics detailing the performance of (a) DOC-ANNa a
 ## Installation
 
 ```bash
-conda create -n docann python=3.10
-conda activate docann
+conda create -n doc_env python=3.10
+conda activate doc_env
 pip install -r requirements.txt
 ```
 
