@@ -36,6 +36,20 @@ Two neural networks are implemented:
 * `DOCANNa` → optimized for **coastal waters**
 * `DOCANNb` → optimized for **open ocean**
 
+
+---
+
+## 🧪 Model Evaluation
+
+Evaluate model performance using matchup datasets:
+
+```bash
+python scripts/run_evaluation.py
+```
+Evaluation visualization:
+
+![DOC Map](outputs/DOCANN_evaluation.png)
+
 ---
 
 ## Installation
