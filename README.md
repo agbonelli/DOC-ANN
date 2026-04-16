@@ -49,7 +49,9 @@ python scripts/run_evaluation.py
 Evaluation visualization:
 
 ![DOC Map](outputs/DOCANN_evaluation.png)
+
 Fig. 1. Scatter plots and statistics detailing the performance of (a) DOC-ANNa and (b) DOC-ANN models over the training (o) and validation (*) data sets. The solid line represents the 1:1
+
 ---
 
 ## Installation
