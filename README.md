@@ -121,8 +121,67 @@ This repository ensures full reproducibility:
 
 ## Repository structure
 
-<pre> DOC-ANN/ │ ├── README.md # Project overview and usage instructions ├── LICENSE # License information ├── requirements.txt # Python dependencies ├── .gitignore # Ignored files and directories │ ├── configs/ │ └── config.yaml # Main configuration file │ ├── models/ │ ├── DOCANNa.h5 │ ├── DOCANNa_scaler.pkl │ ├── DOCANNb.h5 │ └── DOCANNb_scaler.pkl │ ├── data/ │ └── sample/ │ ├── chl.nc │ ├── sst.nc │ ├── cdom.nc │ └── mld.nc │ ├── outputs/ │ ├── doc_map.nc │ └── doc_map.png │ ├── logs/ │ └── run_*.log │ ├── src/ │ └── doc_model/ │ ├── __init__.py │ │ │ ├── data/ │ │ └── netcdf.py │ │ │ ├── models/ │ │ └── inference.py │ │ │ ├── pipeline/ │ │ └── runner.py │ │ │ ├── utils/ │ │ ├── config.py │ │ ├── logger.py │ │ └── io.py │ │ │ └── visualization/ │ └── plot.py │ ├── scripts/ │ ├── run_inference.py │ └── plot_map.py │ └── tests/ └── test_inference.py </pre>
+## 📂 Repository Structure
 
+```
+DOC-ANN/
+│
+├── README.md              # Project overview and usage instructions
+├── LICENSE                # License information
+├── requirements.txt       # Python dependencies
+├── .gitignore             # Ignored files and directories
+│
+├── configs/
+│   └── config.yaml        # Main configuration file
+│
+├── models/
+│   ├── DOCANNa.h5
+│   ├── DOCANNa_scaler.pkl
+│   ├── DOCANNb.h5
+│   └── DOCANNb_scaler.pkl
+│
+├── data/
+│   └── sample/
+│       ├── chl.nc
+│       ├── sst.nc
+│       ├── cdom.nc
+│       └── mld.nc
+│
+├── outputs/
+│   ├── doc_map.nc
+│   └── doc_map.png
+│
+├── logs/
+│   └── run_*.log
+│
+├── src/
+│   └── doc_model/
+│       ├── __init__.py
+│       │
+│       ├── data/
+│       │   └── netcdf.py
+│       │
+│       ├── models/
+│       │   └── inference.py
+│       │
+│       ├── pipeline/
+│       │   └── runner.py
+│       │
+│       ├── utils/
+│       │   ├── config.py
+│       │   ├── logger.py
+│       │   └── io.py
+│       │
+│       └── visualization/
+│           └── plot.py
+│
+├── scripts/
+│   ├── run_inference.py
+│   └── plot_map.py
+│
+└── tests/
+    └── test_inference.py
+```
 
 
 ## Contact
