@@ -122,7 +122,9 @@ This repository ensures full reproducibility:
 ## Repository structure
 
 DOC-ANN/
+
 │
+
 ├── README.md              # Project overview and usage instructions
 
 ├── LICENSE                # License information
