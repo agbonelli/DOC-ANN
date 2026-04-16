@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+keras
+netCDF4
+pyyaml
+joblib

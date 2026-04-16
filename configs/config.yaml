@@ -1,0 +1,19 @@
+model:
+  name: DOCANNa
+  path: models/DOCANNa.h5
+  scaler: models/DOCANNa_scaler.pkl
+
+data:
+  inputs:
+    CHL_OC4_2: data/sample/chl.nc
+    SST_table_2: data/sample/sst.nc
+    cdom443_BL1_3: data/sample/cdom.nc
+    MLD_table_2: data/sample/mld.nc
+
+output:
+  path: outputs/doc_map.nc
+
+logging:
+  level: INFO
+  save_to_file: true
+  log_dir: logs/

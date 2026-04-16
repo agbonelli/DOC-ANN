@@ -1,0 +1,3 @@
+[2026-04-15 20:15:29,722] [INFO] - Starting DOC inference pipeline
+[2026-04-15 20:15:29,740] [INFO] - Using predictors: ['CHL', 'SST', 'CDOM', 'MLD']
+[2026-04-15 20:15:29,740] [INFO] - Number of input files: 4
