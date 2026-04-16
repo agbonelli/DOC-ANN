@@ -1,19 +1,29 @@
-model:
-  name: DOCANNa
-  path: models/DOCANNa.h5
-  scaler: models/DOCANNa_scaler.pkl
-
+evaluation:
+  model: A   # o B
 data:
-  inputs:
-    CHL_OC4_2: data/sample/chl.nc
-    SST_table_2: data/sample/sst.nc
-    cdom443_BL1_3: data/sample/cdom.nc
-    MLD_table_2: data/sample/mld.nc
+  matchup: data/matchup.csv
+  target: DOCmindepth_0to50
 
-output:
-  path: outputs/doc_map.nc
+  train_idx_a: data/train_idx_ANNa.csv
+  val_idx_a: data/val_idx_ANNa.csv
 
-logging:
-  level: INFO
-  save_to_file: true
-  log_dir: logs/
+  train_idx_b: data/train_idx_ANNb.csv
+  val_idx_b: data/val_idx_ANNb.csv
+
+model:
+  A_path: models/DOCANNa.h5
+  B_path: models/DOCANNb.h5
+
+  A_scaler: models/DOCANNa_scaler.pkl
+  B_scaler: models/DOCANNb_scaler.pkl
+
+  A_predictors:
+    - CHL_OC4_2
+    - SST_table_2
+    - cdom443_BL1_3
+    - MLD_table_2
+
+  B_predictors:
+    - SST_table_2
+    - cdom443_BL1_3
+    - MLD_table_2

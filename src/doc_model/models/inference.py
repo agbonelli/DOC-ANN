@@ -10,18 +10,18 @@ class DOCModel:
 
     def predict(self, df, predictors):
         df_clean = df.dropna()
-
+    
         if df_clean.empty:
             return np.full(len(df), np.nan)
-
+    
         X = self.scaler.transform(df_clean[predictors])
-        
+
         if len(self.model.input_shape) == 3:
-            X = np.expand_dims(X, axis=1)
+            X = X.reshape((X.shape[0], 1, X.shape[1]))
 
         y_pred = np.squeeze(self.model.predict(X))
-        
-        result = np.full(len(df), np.nan)
-        result[df_clean.index] = y_pred
+    
+        result = pd.Series(np.nan, index=df.index)
+        result.loc[df_clean.index] = y_pred
 
-        return result
+        return result.values

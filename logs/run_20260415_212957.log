@@ -1,0 +1,5 @@
+[2026-04-15 21:29:57,492] [INFO] - Starting DOC inference pipeline
+[2026-04-15 21:29:57,510] [INFO] - Using predictors: ['CHL_OC4_2', 'SST_table_2', 'cdom443_BL1_3', 'MLD_table_2']
+[2026-04-15 21:29:57,510] [INFO] - Number of input files: 4
+[2026-04-15 21:29:57,574] [INFO] - Saving output to outputs/doc_map.nc
+[2026-04-15 21:29:57,577] [INFO] - Pipeline finished successfully
