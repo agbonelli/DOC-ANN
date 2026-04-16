@@ -131,55 +131,55 @@ DOC-ANN/
 ├── requirements.txt       # Python dependencies
 ├── .gitignore             # Ignored files and directories
 │
-├── configs/
+├── configs/               # Configuration files
 │   └── config.yaml        # Main configuration file
 │
-├── models/
+├── models/                # Trained models and scalers
 │   ├── DOCANNa.h5
 │   ├── DOCANNa_scaler.pkl
 │   ├── DOCANNb.h5
 │   └── DOCANNb_scaler.pkl
 │
-├── data/
-│   └── sample/
+├── data/                  # Input datasets
+│   └── sample/            # Example data for testing
 │       ├── chl.nc
 │       ├── sst.nc
 │       ├── cdom.nc
 │       └── mld.nc
 │
-├── outputs/
-│   ├── doc_map.nc
-│   └── doc_map.png
+├── outputs/               # Generated outputs
+│   ├── doc_map.nc         # Output NetCDF file
+│   └── doc_map.png        # Visualization map
 │
-├── logs/
+├── logs/                  # Execution logs
 │   └── run_*.log
 │
-├── src/
+├── src/                   # Source code
 │   └── doc_model/
 │       ├── __init__.py
 │       │
-│       ├── data/
+│       ├── data/          # Data loading utilities
 │       │   └── netcdf.py
 │       │
-│       ├── models/
+│       ├── models/        # Model inference logic
 │       │   └── inference.py
 │       │
-│       ├── pipeline/
+│       ├── pipeline/      # Pipeline execution
 │       │   └── runner.py
 │       │
-│       ├── utils/
+│       ├── utils/         # Helper functions
 │       │   ├── config.py
 │       │   ├── logger.py
 │       │   └── io.py
 │       │
-│       └── visualization/
+│       └── visualization/ # Plotting utilities
 │           └── plot.py
 │
-├── scripts/
-│   ├── run_inference.py
-│   └── plot_map.py
+├── scripts/               # CLI scripts
+│   ├── run_inference.py   # Run full inference pipeline
+│   └── plot_map.py        # Generate visualization
 │
-└── tests/
+└── tests/                 # Unit tests
     └── test_inference.py
 ```
 
