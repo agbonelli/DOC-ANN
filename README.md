@@ -177,7 +177,7 @@ DOC-ANN/
 
 │
 
-├── src/                   # Source code
+├── src/                  # Source code
 
 │   └── doc_model/
 
@@ -191,19 +191,19 @@ DOC-ANN/
 
 │       │
 
-│       ├── models/        # Model inference logic
+│       ├── models/         # Model inference logic
 
 │       │   └── inference.py
 
 │       │
 
-│       ├── pipeline/      # Pipeline execution
+│       ├── pipeline/       # Pipeline execution
 
 │       │   └── runner.py
 
 │       │
 
-│       ├── utils/         # Helper functions
+│       ├── utils/          # Helper functions
 
 │       │   ├── config.py
 
