@@ -134,11 +134,13 @@ DOC-ANN/
 ├── .gitignore             # Ignored files and directories
 
 │
+
 ├── configs/               # Configuration files
 
 │   └── config.yaml        # Main configuration file
 
 │
+
 ├── models/                # Trained models and scalers
 
 │   ├── DOCANNa.h5
