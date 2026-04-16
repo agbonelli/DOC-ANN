@@ -124,60 +124,113 @@ This repository ensures full reproducibility:
 DOC-ANN/
 │
 ├── README.md              # Project overview and usage instructions
+
 ├── LICENSE                # License information
+
 ├── requirements.txt       # Python dependencies
+
 ├── .gitignore             # Ignored files and directories
+
 │
 ├── configs/               # Configuration files
+
 │   └── config.yaml        # Main configuration file
+
 │
 ├── models/                # Trained models and scalers
+
 │   ├── DOCANNa.h5
+
 │   ├── DOCANNa_scaler.pkl
+
 │   ├── DOCANNb.h5
+
 │   └── DOCANNb_scaler.pkl
+
 │
+
 ├── data/                  # Input datasets
+
 │   └── sample/            # Example data for testing
+
 │       ├── chl.nc
+
 │       ├── sst.nc
+
 │       ├── cdom.nc
+
 │       └── mld.nc
+
 │
+
 ├── outputs/               # Generated outputs
+
 │   ├── doc_map.nc         # Output NetCDF file
+
 │   └── doc_map.png        # Visualization map
+
 │
+
 ├── logs/                  # Execution logs
+
 │   └── run_*.log
+
 │
+
 ├── src/                   # Source code
+
 │   └── doc_model/
+
 │       ├── __init__.py
+
 │       │
+
 │       ├── data/          # Data loading utilities
+
 │       │   └── netcdf.py
+
 │       │
+
 │       ├── models/        # Model inference logic
+
 │       │   └── inference.py
+
 │       │
+
 │       ├── pipeline/      # Pipeline execution
+
 │       │   └── runner.py
+
 │       │
+
 │       ├── utils/         # Helper functions
+
 │       │   ├── config.py
+
 │       │   ├── logger.py
+
 │       │   └── io.py
+
 │       │
+
 │       └── visualization/ # Plotting utilities
+
 │           └── plot.py
+
 │
+
 ├── scripts/               # CLI scripts
+
 │   ├── run_inference.py   # Run full inference pipeline
+
 │   └── plot_map.py        # Generate visualization
+
 │
+
 └── tests/                 # Unit tests
+
     └── test_inference.py
+
 
 
 ## Contact
